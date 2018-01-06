@@ -248,11 +248,16 @@ class VideoPlayer extends Component {
       onMorePress,
       inlineOnly,
       playInBackground,
-      playWhenInactive
+      playWhenInactive,
+      inlineWidth,
+      inlineHeight,
     } = this.props
+
+    const inlineSize = inlineWidth && inlineHeight;
+
     return (
       <View
-        style={[styles.background, fullScreen ? styles.fullScreen : styles.inline]}
+        style={[styles.background, fullScreen ? styles.fullScreen : styles.inline,!!inlineSize&&{width:inlineWidth,height:inlineHeight}]}
       >
         <StatusBar hidden={fullScreen} />
         {
@@ -264,7 +269,7 @@ class VideoPlayer extends Component {
           paused={paused}
           resizeMode={resizeMode}
           repeat={loop}
-          style={fullScreen ? styles.fullScreen : styles.inline}
+          style={[fullScreen ? styles.fullScreen : styles.inline,!!inlineSize&&{width:inlineWidth,height:inlineHeight}]}
           ref={(ref) => { this.player = ref }}
           rate={rate}
           volume={volume}
