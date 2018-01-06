@@ -1,4 +1,4 @@
 import {Video as VideoPlayerBasic} from './player/basic'
-import {VideoPlayer as VideoPlayerNormal} from './player/normal'
+import VideoPlayer from './player/normal/VideoPlayer'
 
-export {VideoPlayerBasic, VideoPlayerNormal}
+export {VideoPlayerBasic, VideoPlayer as VideoPlayerNormal}
