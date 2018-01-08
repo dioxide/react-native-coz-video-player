@@ -20,7 +20,7 @@ import com.google.android.exoplayer.upstream.DataSource;
 import com.google.android.exoplayer.upstream.DefaultAllocator;
 import com.google.android.exoplayer.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer.upstream.DefaultUriDataSource;
-import com.greatdroid.reactnative.media.player.TrackRenderersBuilder;
+import com.coz.rn.media.videoplayer.TrackRenderersBuilder;
 
 public class ExtractorRenderersBuilder implements TrackRenderersBuilder {
 

@@ -31,7 +31,7 @@ import com.google.android.exoplayer.upstream.DefaultAllocator;
 import com.google.android.exoplayer.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer.upstream.DefaultUriDataSource;
 import com.google.android.exoplayer.util.ManifestFetcher;
-import com.greatdroid.reactnative.media.player.TrackRenderersBuilder;
+import com.coz.rn.media.videoplayer.TrackRenderersBuilder;
 
 import java.io.IOException;
 import java.util.List;
