@@ -140,8 +140,7 @@ export default class Controls extends React.Component {
             style={{flex: 1, marginHorizontal: 5, height: 40}}
             trackContainerStyle={{height: 2, backgroundColor: 'gray'}}
             thumbImage={require('./img/media-player-thumb.png')}
-            thumbStyle={{width: 10, height: 10}}
-
+            thumbStyle={{width: 1, height: 1}}
             onSlidingComplete={(value) => {
               this.setState({
                 sliding: false,
@@ -158,7 +157,7 @@ export default class Controls extends React.Component {
             maximumValue={this.props.total}
             minimumValue={0}
             value={this.state.current}
-            disabled={this.props.total > 0}
+            disabled={true}
             tracks={tracks}
           />
 
