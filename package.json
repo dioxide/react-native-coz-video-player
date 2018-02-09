@@ -20,8 +20,7 @@
     "url": "https://github.com/dioxide/react-native-coz-video-player/issues"
   },
   "homepage": "https://github.com/dioxide/react-native-coz-video-player#readme",
-  "peerDependencies": {
-    "react-native": "^0.50.0",
+  "dependencies": {
     "react-native-keep-awake": "^2.0.6",
     "react-native-linear-gradient": "^2.3.0",
     "react-native-orientation": "^3.1.0",
